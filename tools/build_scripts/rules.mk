@@ -95,8 +95,8 @@ final-out : final-out-lib
 	$(TOP_Q) \
 	cp -rf $(TOP_DIR)/certs $(FINAL_DIR)/bin/
 	
-	$(TOP_Q) \
-	cp -rf $(TOP_DIR)/device_info.json $(FINAL_DIR)/bin/
+#	$(TOP_Q) \
+#	cp -rf $(TOP_DIR)/device_info.json $(FINAL_DIR)/bin/
 
 #ifeq (,$(filter -DASR_ENABLED,$(CFLAGS)))
 #	$(TOP_Q) \
@@ -106,11 +106,11 @@ final-out : final-out-lib
 	$(TOP_Q) \
 	rm -rf ${TEMP_DIR}
 
-#include $(SCRIPT_DIR)/rules-tests.mk
+include $(SCRIPT_DIR)/rules-tests.mk
 
 samples:
-#	$(TOP_Q) \
-#	make -s -C $(SAMPLE_DIR)
+	$(TOP_Q) \
+	make -s -C $(SAMPLE_DIR)
 
 TLSDIR = $(THIRD_PARTY_PATH)/mbedtls
 cJSONDIR = $(THIRD_PARTY_PATH)/cJSON
