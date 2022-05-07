@@ -26,8 +26,8 @@
 #define QCLOUD_IOT_DEVICE_SDK_APPID_LEN (sizeof(QCLOUD_IOT_DEVICE_SDK_APPID) - 1)
 
 /* MQTT server domain */
-#define QCLOUD_IOT_MQTT_DIRECT_DOMAIN  "iotcloud.tencentdevices.com"
-#define QCLOUD_IOT_MQTT_US_EAST_DOMAIN "us-east.iotcloud.tencentdevices.com"
+#define QCLOUD_IOT_MQTT_DIRECT_DOMAIN  "iothub.hotray.cn"
+#define QCLOUD_IOT_MQTT_US_EAST_DOMAIN "iothub.hotray.cn"
 
 #define MQTT_SERVER_PORT_TLS   8883
 #define MQTT_SERVER_PORT_NOTLS 1883
