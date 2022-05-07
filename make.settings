@@ -4,8 +4,8 @@ BUILD_TYPE                  	= release
 DEBUG_MAKEFILE                  = n
 
 # 编译工具链
-PLATFORM_CC                 	= gcc
-PLATFORM_AR                 	= ar
+#PLATFORM_CC                 	= gcc
+#PLATFORM_AR                 	= ar
 PLATFORM_OS                 	= linux
 PLATFORM_SSL					= mbedtls
 PLATFORM_AT_DEV					= esp8266
@@ -13,8 +13,8 @@ PLATFORM_AT_DEV					= esp8266
 # 交叉编译工具链示例
 # PLATFORM_CC                 = /opt/openwrt/packages/toolchain/mipsel-linux-gcc
 # PLATFORM_AR                 = /opt/openwrt/packages/toolchain/mipsel-linux-ar
-# PLATFORM_CC                 = armcc
-# PLATFORM_AR                 = armar
+PLATFORM_CC                 = x86_64-openwrt-linux-gcc
+PLATFORM_AR                 = x86_64-openwrt-linux-ar
 
 # 是否打开MQTT通道的总开关
 FEATURE_MQTT_COMM_ENABLED               = y

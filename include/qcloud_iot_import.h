@@ -291,7 +291,7 @@ int HAL_SetDevInfoFile(const char *file_name);
  * Define timer structure, platform dependant
  */
 struct Timer {
-#if defined(__linux__) && defined(__GLIBC__)
+#if defined(__linux__) //&& defined(__GLIBC__)
     struct timeval end_time;
 #else
     uintptr_t end_time;
