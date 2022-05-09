@@ -4,8 +4,8 @@ BUILD_TYPE                  	= release
 DEBUG_MAKEFILE                  = n
 
 # 编译工具链
-#PLATFORM_CC                 	= gcc
-#PLATFORM_AR                 	= ar
+PLATFORM_CC                 	= gcc
+PLATFORM_AR                 	= ar
 PLATFORM_OS                 	= linux
 PLATFORM_SSL					= mbedtls
 PLATFORM_AT_DEV					= esp8266
@@ -13,8 +13,8 @@ PLATFORM_AT_DEV					= esp8266
 # 交叉编译工具链示例
 # PLATFORM_CC                 = /opt/openwrt/packages/toolchain/mipsel-linux-gcc
 # PLATFORM_AR                 = /opt/openwrt/packages/toolchain/mipsel-linux-ar
-PLATFORM_CC                 = x86_64-openwrt-linux-gcc
-PLATFORM_AR                 = x86_64-openwrt-linux-ar
+#PLATFORM_CC                 = x86_64-openwrt-linux-gcc
+#PLATFORM_AR                 = x86_64-openwrt-linux-ar
 
 # 是否打开MQTT通道的总开关
 FEATURE_MQTT_COMM_ENABLED               = y
@@ -32,19 +32,19 @@ FEATURE_GATEWAY_AUTOMATION_ENABLED = n
 FEATURE_MULTITHREAD_ENABLED        		= y
 
 # 是否使能设备动态注册
-FEATURE_DEV_DYN_REG_ENABLED             = y
+FEATURE_DEV_DYN_REG_ENABLED             = n
 
 # 是否打开OTA固件升级总开关
-FEATURE_OTA_COMM_ENABLED                = y
+FEATURE_OTA_COMM_ENABLED                = n
 
 # 是否打开资源管理总开关
-FEATURE_RESOURCE_UPDATE_ENABLED         = y
+FEATURE_RESOURCE_UPDATE_ENABLED         = n
 
 # 是否打开文件管理总开关
-FEATURE_FILE_MANAGE_ENABLED             = y
+FEATURE_FILE_MANAGE_ENABLED             = n
 
 # 是否使能语音识别功能
-FEATURE_ASR_ENABLED        				= y
+FEATURE_ASR_ENABLED        				= n
 
 # 是否使用HTTPS下载固件
 FEATURE_OTA_USE_HTTPS                   = y
@@ -56,7 +56,7 @@ FEATURE_AUTH_MODE				        = CERT
 FEATURE_AUTH_WITH_NOTLS					= n
 
 # 是否打开数据模板功能
-FEATURE_DATA_TEMPLATE_ENABLED           = y
+FEATURE_DATA_TEMPLATE_ENABLED           = n
 
 # 是否打开数据模板事件上报功能
 FEATURE_EVENT_POST_ENABLED              = n 
@@ -77,19 +77,19 @@ FEATURE_DEBUG_DEV_INFO_USED             = n
 FEATURE_AT_TCP_ENABLED					= n	
 
 # 是否打开AT模组中断接收功能
-FEATURE_AT_UART_RECV_IRQ                = y
+FEATURE_AT_UART_RECV_IRQ                = n
 
 # 是否打开AT模组多线程功能
-FEATURE_AT_OS_USED                      = y
+FEATURE_AT_OS_USED                      = n
 
 # 是否打开AT模组调试功能
-FEATURE_AT_DEBUG                        = y
+FEATURE_AT_DEBUG                        = n
 
 # 是否打开WIFI配网功能
 FEATURE_WIFI_CONFIG_ENABLED             = n
 
 # 是否打开酷狗音乐功能
-FEATURE_KGMUSIC_ENABLED                 = y
+FEATURE_KGMUSIC_ENABLED                 = n
 
 # 是否打开位置功能
-FEATURE_LOCATION_ENABLED                = y
+FEATURE_LOCATION_ENABLED                = n
